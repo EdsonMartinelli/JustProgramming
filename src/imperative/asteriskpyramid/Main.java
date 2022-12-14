@@ -1,4 +1,4 @@
-package asteriskpyramid;
+package src.imperative.asteriskpyramid;
 
 public class Main {
     public static void main(String args[]) {
@@ -10,13 +10,13 @@ public class Main {
                     case "2" : inversePyramid(length); break;
                     case "3" : symmetricPyramid(length); break;
                     case "4" : inverseSymmetricPyramid(length); break;
-                    default : System.out.println("Argumento invalido.");
+                    default : System.out.println("Invalid arg!");
                 }
             } catch (Exception e){
-                System.out.println("A altura da piramide não eh um numero.");
+                System.out.println("The pyramid's height is not a number!");
             }
         } else {
-            System.out.println("Argumentos incorretos para construir a piramide.");
+            System.out.println("Wrong args to build a pyramid!");
         }
     }
 

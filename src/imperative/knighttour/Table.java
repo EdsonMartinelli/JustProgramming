@@ -1,4 +1,4 @@
-package knighttour;
+package src.imperative.knighttour;
 
 public class Table {
 

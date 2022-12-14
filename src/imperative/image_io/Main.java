@@ -1,4 +1,4 @@
-package raytracing;
+package src.imperative.image_io;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,7 +24,7 @@ public class Main {
         }
           
         try {
-            ImageIO.write(img, "jpg", new File("raytracing/image.jpg"));
+            ImageIO.write(img, "jpg", new File("imageio/image.jpg"));
         }catch (IOException e) { 
             e.printStackTrace();
         }

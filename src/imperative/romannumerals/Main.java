@@ -1,31 +1,33 @@
-package romannumerals;
+package src.imperative.romannumerals;
 
 public class Main {
 
     public static void main(String args[]) {
         try{
-            if (Integer.parseInt(args[0]) <= 3999 || Integer.parseInt(args[0]) == 0) {
+            if (Integer.parseInt(args[0]) <= 3999 && Integer.parseInt(args[0]) > 0) {
                 getDecimal(args[0]);
             } else {
-                System.out.println("Numero nao suportado ou nao existente.");
+                System.out.println("Number is not supported!");
             }
         } catch (Exception e){
-            System.out.println("Argumento invalido.");
+            System.out.println("Invalid args!");
         }
     }
 
     public static void getDecimal(String number) {
-        String[] alphabet = {"I", "V", "X", "L", "C", "D", "M", "", ""};
-        String celNumbers[] = number.split("(0-9)*");
+        String[] alphabet = {"I", "V", "X", "L", "C", "D", "M"};
         String result = "";
         int pos = 0;
-        for(int x = celNumbers.length; x > 0 ; x--){
-           int celNumber = Integer.parseInt(celNumbers[x - 1]);
-           String celString = getCelDecimal(celNumber, alphabet[pos], alphabet[pos+1], alphabet[pos+2]);
+        for(int x = number.length(); x > 0 ; x--){
+           int celNumber = Integer.parseInt(String.valueOf(number.charAt(x - 1)));
+           String celString = getCelDecimal(celNumber,
+                                            (pos <= alphabet.length - 1) ? alphabet[pos] : " ",
+                                            (pos + 1 <= alphabet.length - 1) ? alphabet[pos + 1] : "",
+                                            (pos + 2 <= alphabet.length - 1) ?alphabet[pos + 2] : " ");
            result = celString + result;
            pos += 2;
         }
-        System.out.println(result);        
+        System.out.println(result);     
     }
     
     public static String getCelDecimal(int number,

@@ -1,4 +1,4 @@
-package knighttour;
+package src.imperative.knighttour;
 
 import java.util.ArrayList;
 import java.util.List;

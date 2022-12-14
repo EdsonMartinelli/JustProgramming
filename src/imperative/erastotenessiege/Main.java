@@ -1,4 +1,4 @@
-package erastotenessiege;
+package src.imperative.erastotenessiege;
 
 public class Main{
     public static void main(String[] args) {
@@ -6,10 +6,10 @@ public class Main{
         
         populateTable(table);
         sieveOfEratosthenes(table);
-        System.out.println("Tabela final: ");
+        System.out.println("Final Table: ");
         printTable(table);
         System.out.println();
-        System.out.println("Numeros primos de 1 a 100: ");
+        System.out.println("Prime numbers between 1 and 100: ");
         printPrimeNumbers(table);
     }
 
@@ -41,6 +41,9 @@ public class Main{
         }
         System.out.println();
     }
+
+
+
 
     public static void sieveOfEratosthenes(int[] table){
         for(int x = 0; x < table.length; x++){
