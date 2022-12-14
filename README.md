@@ -11,13 +11,15 @@ Simple codes to exemplify functionalities of Java groupped by imperative e funct
 Here's the project folder structure:
 
 ```
-├── src/                    # Root directory.
-|   ├──functional/          # Folder used to store functional samples.
-|   |   ├──project_name/    # Project folder.
-|   |   |   ├── Main.java   # Main class of project.
-├── imperative/             # Folder used to store imperative samples.
-|   |   ├──project_name/    # Project folder.
-|   |   |   ├── Main.java   # Main class of project.
+├── src/                         # Root directory.
+|   ├──functional/               # Folder used to store functional samples.
+|   |   ├──project_name/         # Project folder.
+|   |   |   ├── Main.java        # Main class of project.
+|   |   |   ├── description.md   # Description of project.
+├── imperative/                  # Folder used to store imperative samples.
+|   |   ├──project_name/         # Project folder.
+|   |   |   ├── Main.java        # Main class of project.
+|   |   |   ├── description.md   # Description of project.
 ```
 
 ### Compiling
